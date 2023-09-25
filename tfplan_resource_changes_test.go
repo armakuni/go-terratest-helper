@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
+	terratestHelper "github.com/armakuni/go-terratest-helper"
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	"github.com/stretchr/testify/assert"
-	terratestHelper "github.com/armakuni/go-terratest-helper"
 )
 
 func TestGetResourceChangeAfterByAddressReturnsErrorWhenAddressStringIsEmpty(t *testing.T) {
