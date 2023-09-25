@@ -1,4 +1,4 @@
-package resourcechanges
+package tfplanstruct
 
 import (
 	"errors"

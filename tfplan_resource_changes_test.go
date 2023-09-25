@@ -1,4 +1,4 @@
-package resourcechanges_test
+package tfplanstruct_test
 
 import (
 	"fmt"
