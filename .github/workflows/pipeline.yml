@@ -12,8 +12,12 @@ jobs:
 
   create-release:
     needs:
-      - run-tests
       - check-conventional-commits
+      - lint-pipeline
+      - run-tests
     if: github.ref == 'refs/heads/main'
     uses: armakuni/github-actions/.github/workflows/tag-and-release.yml@v0.4.1
     secrets: inherit
+
+  lint-pipeline:
+    uses: armakuni/github-actions/.github/workflows/lint-pipeline.yml@v0.10.4
