@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.2.0](https://github.com/armakuni/go-terratest-helper/compare/v0.1.1..v0.2.0) - 2023-09-26
+#### Continuous Integration
+- **(deps)** bump armakuni/github-actions from 0.4.1 to 0.10.4 - ([7e4a289](https://github.com/armakuni/go-terratest-helper/commit/7e4a2893248e7f2b9d31f2a1c0f5ce9b9045f361)) - dependabot[bot]
+- **(deps)** bump actions/checkout from 3 to 4 - ([7ba156f](https://github.com/armakuni/go-terratest-helper/commit/7ba156f6e37ebc605b2d42dab8354b72076b4823)) - dependabot[bot]
+- Lint pipeline - ([f6a7110](https://github.com/armakuni/go-terratest-helper/commit/f6a71109a4b97a861a4dab62f32a7ab89ac5e014)) - Billie Thompson
+- Add conditions to mergify - ([a888eca](https://github.com/armakuni/go-terratest-helper/commit/a888ecae41dc82e380383d661c0141bad23f87e3)) - Tom Oram
+- Add mergify - ([e2f5218](https://github.com/armakuni/go-terratest-helper/commit/e2f5218cb3a1258748515f9e78e9094e8da58d0d)) - Tom Oram
+#### Features
+- implement util InterfaceSliceToStringSliceE function - ([b839969](https://github.com/armakuni/go-terratest-helper/commit/b8399694ff735bfaeaf5215687077bbeb55fc6da)) - abhisheksr01
+
+- - -
+
 ## [v0.1.1](https://github.com/armakuni/go-terratest-helper/compare/v0.1.0..v0.1.1) - 2023-09-26
 #### Bug Fixes
 - **(tfplan_resource_changes)** go mod init reference - ([b2dfae4](https://github.com/armakuni/go-terratest-helper/commit/b2dfae44099d3e972d9ba02b170f1b6e00a02e96)) - abhisheksr01
