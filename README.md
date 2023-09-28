@@ -95,3 +95,37 @@ The `InterfaceSliceToStringSliceE` function is a Go function that converts a sli
    - The function checks for a `nil` input and returns an error if the input is `nil`.
    - Other error cases, such as invalid input types, are not explicitly handled in thi    function.
 </details>
+
+### InitAndPlanAndShowWithStructNoLogTempPlanFileE
+
+This Go function facilitates Terratest testing of Terraform configurations.
+
+The Terratest lib do not have function which returns error when TF Plan fails. Example when we would like to test the code for validation or an expected error scenario.
+
+This function allows you to initialize Terraform, create a plan, and show the plan with options for suppressing log output. It also generates a temporary plan file to store the plan. Here's a quick brief:
+
+- **Parameters:**
+  - `t testing.TestingT`: The test context for Terratest.
+  - `options *terraform.Options`: Terraform configuration options.
+
+- **Return Values:**
+  - `*terraform.PlanStruct`: The generated Terraform plan.
+  - `error`: Any encountered errors during execution. Example: A TF Variable validation failures.
+
+
+<details>
+  <summary>Click here to see detailed Implementation:</summary>
+    
+  - **Usage Example:**
+    Conveniently run Terraform operations with log suppression and plan storage in Terratest tests.
+
+    ```go
+    plan, err := InitAndPlanAndShowWithStructNoLogTempPlanFileE(t, options)
+    ```
+
+ - **Notes:**
+  
+   - Designed for Terratest.
+   - Ensure correct test setup.
+   - Does not handle Terraform configuration errors.
+</details>

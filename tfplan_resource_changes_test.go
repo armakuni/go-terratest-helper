@@ -11,7 +11,7 @@ import (
 )
 
 func TestGetResourceChangeAfterByAddressReturnsErrorWhenAddressStringIsEmpty(t *testing.T) {
-	tfStruct := getMockTFPlanStruct("./mocktfplan.json")
+	tfStruct := getMockTFPlanStruct("./testresources/mocktfplan.json")
 
 	_, err := terratestHelper.GetResourceChangeAfterByAddressE("", tfStruct)
 
@@ -19,7 +19,7 @@ func TestGetResourceChangeAfterByAddressReturnsErrorWhenAddressStringIsEmpty(t *
 }
 
 func TestGetResourceChangeAfterByAddressReturnsMatchingAddress(t *testing.T) {
-	tfStruct := getMockTFPlanStruct("./mocktfplan.json")
+	tfStruct := getMockTFPlanStruct("./testresources/mocktfplan.json")
 
 	module, _ := terratestHelper.GetResourceChangeAfterByAddressE("module.test_website_bucket.module.bucket.aws_s3_bucket_public_access_block.this[0]", tfStruct)
 
@@ -39,7 +39,7 @@ func TestGetResourceChangeAfterByAddressReturnsErrorWhenPlanIsNil(t *testing.T) 
 // }
 
 func TestGetResourceChangeAfterByAddressReturnsErrorWhenNoMatchingAddressFound(t *testing.T) {
-	tfStruct := getMockTFPlanStruct("./mocktfplan.json")
+	tfStruct := getMockTFPlanStruct("./testresources/mocktfplan.json")
 	address := "module.test_website_bucket.module.bucket.aws_s3_bucket_public_access_block"
 
 	_, err := terratestHelper.GetResourceChangeAfterByAddressE(address, tfStruct)
