@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.3.0](https://github.com/armakuni/go-terratest-helper/compare/v0.2.0..v0.3.0) - 2023-09-28
+#### Continuous Integration
+- **(deps)** bump armakuni/github-actions from 0.10.4 to 0.10.5 - ([1c429f9](https://github.com/armakuni/go-terratest-helper/commit/1c429f9167143cf7b7c181e265b789bd5c03f058)) - dependabot[bot]
+#### Features
+- implement InitAndPlanAndShowWithStructNoLogTempPlanFileE which returns a temp plan and error - ([438fef4](https://github.com/armakuni/go-terratest-helper/commit/438fef4651447471a1370e85a5ac4bba110f1f72)) - abhisheksr01
+
+- - -
+
 ## [v0.2.0](https://github.com/armakuni/go-terratest-helper/compare/v0.1.1..v0.2.0) - 2023-09-26
 #### Continuous Integration
 - **(deps)** bump armakuni/github-actions from 0.4.1 to 0.10.4 - ([7e4a289](https://github.com/armakuni/go-terratest-helper/commit/7e4a2893248e7f2b9d31f2a1c0f5ce9b9045f361)) - dependabot[bot]
