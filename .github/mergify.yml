@@ -1,14 +1,9 @@
+
 pull_request_rules:
-  - name: "Automatic merge when CI passes"
-    conditions:
-      - author=dependabot[bot]
-      - check-success=check-conventional-commits / check-conventional-commits
-      - check-success=run-tests / run tests
-      - check-success=run-tests / run lint
+  - name: Automatic merge when CI passes
+    conditions: []
     actions:
       queue:
-        method: merge
-
 queue_rules:
   - name: dep-update
     batch_size: 10
@@ -18,3 +13,5 @@ queue_rules:
       - check-success=check-conventional-commits / check-conventional-commits
       - check-success=run-tests / run tests
       - check-success=run-tests / run lint
+    merge_conditions: []
+    merge_method: merge
