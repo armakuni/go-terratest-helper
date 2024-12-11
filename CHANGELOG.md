@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.3.19](https://github.com/armakuni/go-terratest-helper/compare/v0.3.18..v0.3.19) - 2024-12-11
+#### Bug Fixes
+- **(deps)** bump github.com/gruntwork-io/terratest from 0.47.2 to 0.48.0 - ([69f7c45](https://github.com/armakuni/go-terratest-helper/commit/69f7c4504aca5775a1cd1b4ca1c72535ac154689)) - dependabot[bot]
+
+- - -
+
 ## [v0.3.18](https://github.com/armakuni/go-terratest-helper/compare/v0.3.17..v0.3.18) - 2024-11-25
 #### Bug Fixes
 - **(deps)** bump github.com/stretchr/testify from 1.9.0 to 1.10.0 - ([26af6c1](https://github.com/armakuni/go-terratest-helper/commit/26af6c1b2a2835a2758ad745446088b520182cca)) - dependabot[bot]
